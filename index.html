@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera pagina</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Card con Crossfade</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Bienvenido a mi primera página</h1>
-  <p>IMAGEN ALEATORIA</p>
-  <img src="https://picsum.photos/seed/picsum/200/300" alt="ESTADIO">
-</body>
+  <div class="wrap">
+    <div class="card">
+      <div class="card__media" id="media">
+        <img class="img-a" src="https://picsum.photos/seed/picsum/800/600" alt="Imagen principal aleatoria">
+        <img class="img-b" src="https://picsum.photos/seed/alt/800/600" alt="Imagen alternativa aleatoria">
+      </div>
 
-    
+      <div class="card__content">
+        <h1>Bienvenido a mi primera página</h1>
+        <p>IMAGEN ALEATORIA con transición <em>crossfade</em>.</p>
+        <button id="toggle" class="btn" aria-pressed="false" aria-label="Cambiar imagen (crossfade)">
+          🔁 Cambiar imagen
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
